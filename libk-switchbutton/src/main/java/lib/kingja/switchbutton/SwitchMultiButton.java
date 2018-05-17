@@ -93,13 +93,13 @@ public class SwitchMultiButton extends View {
      */
     private void initAttrs(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.SwitchMultiButton);
-        mStrokeRadius = typedArray.getDimension(R.styleable.SwitchMultiButton_strokeRadius, STROKE_RADIUS);
-        mStrokeWidth = typedArray.getDimension(R.styleable.SwitchMultiButton_strokeWidth, STROKE_WIDTH);
-        mTextSize = typedArray.getDimension(R.styleable.SwitchMultiButton_textSize, TEXT_SIZE);
-        mSelectedColor = typedArray.getColor(R.styleable.SwitchMultiButton_selectedColor, SELECTED_COLOR);
-        mSelectedTab = typedArray.getInteger(R.styleable.SwitchMultiButton_selectedTab, SELECTED_TAB);
-        mTypeface = typedArray.getString(R.styleable.SwitchMultiButton_typeface);
-        int mSwitchTabsResId = typedArray.getResourceId(R.styleable.SwitchMultiButton_switchTabs, 0);
+        mStrokeRadius = typedArray.getDimension(R.styleable.SwitchMultiButton_smb_strokeRadius, STROKE_RADIUS);
+        mStrokeWidth = typedArray.getDimension(R.styleable.SwitchMultiButton_smb_strokeWidth, STROKE_WIDTH);
+        mTextSize = typedArray.getDimension(R.styleable.SwitchMultiButton_smb_textSize, TEXT_SIZE);
+        mSelectedColor = typedArray.getColor(R.styleable.SwitchMultiButton_smb_selectedColor, SELECTED_COLOR);
+        mSelectedTab = typedArray.getInteger(R.styleable.SwitchMultiButton_smb_selectedTab, SELECTED_TAB);
+        mTypeface = typedArray.getString(R.styleable.SwitchMultiButton_smb_typeface);
+        int mSwitchTabsResId = typedArray.getResourceId(R.styleable.SwitchMultiButton_smb_switchTabs, 0);
         if (mSwitchTabsResId != 0) {
             mTabTexts = getResources().getStringArray(mSwitchTabsResId);
             mTabNum = mTabTexts.length;
